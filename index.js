@@ -2,7 +2,7 @@ require('dotenv').config();
 import { createServer } from "http";
 import { readFileSync } from "fs";
 import requests from "requests";
-
+const port = process.env.PORT || 8000;
 
 const homeFile = readFileSync("home.html", "utf-8");
 
@@ -42,4 +42,6 @@ const server = createServer((req, res) => {
   }
 });
 
-server.listen(8000, "127.0.0.1");
+server.listen(port, "127.0.0.1");
+
+// https://weatherresultapp.herokuapp.com
