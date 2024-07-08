@@ -1,3 +1,4 @@
+"fuckit"
 require('dotenv').config();
 import { createServer } from "http";
 import { readFileSync } from "fs";
