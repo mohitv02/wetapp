@@ -18,7 +18,7 @@ const replaceVal = (tempVal, orgVal) => {
 
   return temperature;
 };
-
+db = "Mohit@24"
 const server = createServer((req, res) => {
   if (req.url == "/") {
     requests(
